@@ -1,5 +1,8 @@
 package com.springbook.biz;
 
+import org.springframework.context.annotation.Lazy;
+
+@Lazy
 public class SonySpeaker implements Speaker {
 	
 	public SonySpeaker() {

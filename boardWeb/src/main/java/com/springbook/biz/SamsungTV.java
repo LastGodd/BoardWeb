@@ -1,5 +1,10 @@
 package com.springbook.biz;
 
+import org.springframework.context.annotation.Lazy;
+import org.springframework.stereotype.Component;
+
+@Component("sTv")
+@Lazy
 public class SamsungTV implements TV {
 	private Speaker speaker;
 	private int price;
@@ -32,12 +37,12 @@ public class SamsungTV implements TV {
 
 	@Override
 	public void powerOn() {
-		System.out.println("SamsungTV on (가격 : " + price + ")");
+		System.out.println("SamsungTV -- 전원 켠다");
 	}
 
 	@Override
 	public void powerOff() {
-		System.out.println("SamsungTV off");
+		System.out.println("SamsungTV -- 전원 끈다");
 	}
 
 	@Override
@@ -52,5 +57,9 @@ public class SamsungTV implements TV {
 
 	public void printPrice() {
 		System.out.println("price : " + price);
+	}
+	
+	public void destroy() {
+		System.out.println("");
 	}
 }
