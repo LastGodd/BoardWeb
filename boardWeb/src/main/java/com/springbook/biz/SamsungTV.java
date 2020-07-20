@@ -35,7 +35,6 @@ public class SamsungTV implements TV {
 		System.out.println("SamsungTV on (가격 : " + price + ")");
 	}
 
-
 	@Override
 	public void powerOff() {
 		System.out.println("SamsungTV off");
@@ -51,4 +50,7 @@ public class SamsungTV implements TV {
 		speaker.volumeDown();
 	}
 
+	public void printPrice() {
+		System.out.println("price : " + price);
+	}
 }

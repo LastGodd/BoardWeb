@@ -3,16 +3,13 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
-	<!-- <bean id="tv" class="com.springbook.biz.SamsungTV">
-		기본 생성자를 통한 출력
+	<bean id="tv" class="com.springbook.biz.SamsungTV">
 		<constructor-arg ref="apple"></constructor-arg>
 		<constructor-arg value="2700000"></constructor-arg>
 		
-		setter method를 통한 출력
 		<property name="speaker" ref="apple"></property>
 		<property name="price" value="2700000"></property>
-	</bean> -->
-	
+	</bean>
 	
 	<bean id="sony" class="com.springbook.biz.SonySpeaker"></bean>
 	<bean id="apple" class="com.springbook.biz.AppleSpeaker"></bean>
